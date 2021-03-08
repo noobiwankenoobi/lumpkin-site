@@ -20,10 +20,9 @@ function App() {
             multiple audio production software programs.
           </p>
           <p class="about-copy">
-            With an interest an array of genres, Mad Philosophies is constantly
-            innovating and re-inventing their style.
+            With an interest in an array of genres, Mad Philosophies is
+            constantly innovating and re-inventing their style.
           </p>
-          <div class="contacts-area"></div>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 .App {
-  height: 100vh;
-  width: 100vw;
+  /* height: 100vh;
+  width: 100vw; */
 }
 
 /* Landing */
@@ -8,12 +8,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90%;
+  height: 90vh;
   width: 100%;
 }
 
 .landing-img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .img-wrapper {
@@ -38,7 +38,7 @@
 /* About */
 
 .about {
-  height: 60%;
+  height: 60vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -76,4 +76,51 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .img-wrapper {
+    padding: 0.75rem;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .landing {
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    /* overflow: hidden; */
+  }
+
+  .landing-img {
+    width: auto;
+    height: 100%;
+  }
+
+  .main-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .about {
+    height: fit-content;
+  }
+
+  .about-section {
+    width: 85%;
+  }
+
+  .about-title {
+    font-size: 1.25rem;
+    letter-spacing: 0.3rem;
+  }
+
+  .about-copy {
+    font-size: 1rem;
+  }
 }
