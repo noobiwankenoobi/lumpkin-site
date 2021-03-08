@@ -1,38 +1,126 @@
 .App {
-  text-align: center;
+  /* height: 100vh;
+  width: 100vw; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Landing */
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.landing-img {
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.img-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  width: 100%;
+  padding: 5rem;
+}
+
+.main-title {
+  color: white;
+  position: absolute;
+  font-size: 4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+}
+
+/* About */
+
+.about {
+  height: 60vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 60%;
+  padding: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.about-title {
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+.about-copy {
+  font-size: 1.25rem;
+  text-align: left;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+}
+
+.contacts.area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .img-wrapper {
+    padding: 0.75rem;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
   }
-  to {
-    transform: rotate(360deg);
+
+  .landing {
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    /* overflow: hidden; */
+  }
+
+  .landing-img {
+    width: auto;
+    height: 100%;
+  }
+
+  .main-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .about {
+    height: fit-content;
+  }
+
+  .about-section {
+    width: 85%;
+  }
+
+  .about-title {
+    font-size: 1.25rem;
+    letter-spacing: 0.3rem;
+  }
+
+  .about-copy {
+    font-size: 1rem;
   }
 }
