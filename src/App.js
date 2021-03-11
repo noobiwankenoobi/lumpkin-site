@@ -4,14 +4,15 @@ import studioimage from "./images/Studio 2.jpeg";
 function App() {
   return (
     <div className="App">
-      <div class="landing">
-        <div class="img-wrapper">
-          <img src={studioimage} alt="" class="landing-img" />
+      {/* Hero */}
+      <section class="hero">
+        <div class="hero-content">
           <span class="main-title">Mad Philosophies</span>
         </div>
-      </div>
-      <div class="about">
-        <div class="about-section">
+      </section>
+      {/* About */}
+      <section class="about">
+        <div class="about-content">
           <span class="about-title">About</span>
           <p class="about-copy">
             Mad Philosophies is a multi-instrumentalist, composer, producer, and
@@ -24,7 +25,7 @@ function App() {
             constantly innovating and re-inventing their style.
           </p>
         </div>
-      </div>
+      </section>
     </div>
   );
 }
