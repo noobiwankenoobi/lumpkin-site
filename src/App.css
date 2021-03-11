@@ -1,38 +1,48 @@
 .App {
-  /* height: 100vh;
-  width: 100vw; */
+  height: 100vh;
+  width: 100%;
 }
 
-/* Landing */
-.landing {
+.hero {
+  position: relative;
+  width: 100%;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  background: url(images/Studio\ 2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  filter: brightness(60%);
 }
 
-.landing-img {
-  width: 100%;
-}
-
-.img-wrapper {
+.hero-content {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  object-fit: cover;
+  text-align: center;
+  /* padding: 5rem; */
   width: 100%;
-  padding: 5rem;
+  height: 100%;
 }
 
 .main-title {
   color: white;
-  position: absolute;
   font-size: 4rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.7rem;
+  margin: auto;
 }
 
 /* About */
@@ -46,14 +56,15 @@
   align-items: center;
 }
 
-.about-section {
+.about-content {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   height: 100%;
-  width: 60%;
+  width: 100%;
   padding: 2rem;
+  text-align: center;
 }
 
 .about-title {
@@ -66,7 +77,7 @@
 .about-copy {
   font-size: 1.25rem;
   text-align: left;
-  width: 100%;
+  width: 50%;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
   letter-spacing: 0.05rem;
@@ -79,40 +90,48 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .img-wrapper {
-    padding: 0.75rem;
+  .hero-content {
     margin: 0;
     height: 100%;
     width: 100%;
-    object-fit: cover;
     justify-content: flex-start;
     align-items: center;
     overflow: hidden;
   }
 
-  .landing {
+  .hero {
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
-    /* overflow: hidden; */
   }
 
-  .landing-img {
-    width: auto;
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
+    background: url(images/Studio\ 2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    filter: brightness(60%);
   }
 
   .main-title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: center;
   }
 
   .about {
-    height: fit-content;
+    padding-top: 1rem;
   }
 
-  .about-section {
+  .about-content {
     width: 85%;
+    padding: 0;
+    margin-top: 1rem;
   }
 
   .about-title {
